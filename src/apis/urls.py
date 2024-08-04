@@ -12,7 +12,9 @@ urlpatterns += [
 
 urlpatterns+=[
 
-    path('',include('src.apis.olympic.urls',namespace=''))
+    path('',include('src.apis.olympic.urls',namespace='')),
+    path('accounts',include('src.apis.accounts.urls',namespace='accounts'))
+
 ]
 
 

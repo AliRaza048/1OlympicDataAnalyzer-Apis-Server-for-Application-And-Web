@@ -53,8 +53,11 @@ class UniqueYearsCountriesAndSportsView(APIView):
         data = {'Year': pd.to_numeric(df['Year'], errors='coerce').fillna(0).astype(int),
                 'region': df['region'].astype(str),'Sport':df['Sport'].astype(str)}
         years = sorted(data['Year'].unique().tolist())
+        years.append("Overall")
         countries = sorted(data['region'].unique().tolist())
+        countries.append("Overall")
         sports = sorted(data['Sport'].unique().tolist())
+        sports.append("Overall")
 
 
         return Response({

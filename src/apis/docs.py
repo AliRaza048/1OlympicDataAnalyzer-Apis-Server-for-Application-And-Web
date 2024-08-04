@@ -9,9 +9,9 @@ def get_swagger_doc_schema_view():
         openapi.Info(
             title='API',
             default_version='v1.0',
-            description='Application detailed down api implementation. need help contact exarth.com',
-            terms_of_service='https://exarth.com/terms-of-use/',
-            contact=openapi.Contact(email='support@exarth.com'),
+            description='',
+            terms_of_service='',
+            contact=openapi.Contact(email=''),
             license=openapi.License(name='NDA (protected)'),
         ),
         public=True,
